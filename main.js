@@ -6,17 +6,8 @@ $(document).ready(function() {
       $(`<div class="overlay">${enderecoNovaTarefa}</div>`).appendTo(novoItem)
       $(novoItem).appendTo('ul')
       $('#nova-tarefa').val('')
+      $(novoItem).click(function() {
+        $(this).css('text-decoration', 'line-through')
+     }) 
     })
-
-  /* não entendi porque esse código não funciona (não aplica o line-through):
-
-    $('li').click(function() {
-        $(this).css('text-decoration', 'line-through')
-}) 
-  */
-
-
-    $('ul').click('li', function() {
-        $(this).css('text-decoration', 'line-through')
-    })  
   })
