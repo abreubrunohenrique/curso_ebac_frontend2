@@ -2,60 +2,53 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #5f27cd;
-    padding: 16px 5px;
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width:  1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
     color: #fff;
-    display: flex;
-    border-bottom: 16px solid #341f97;
-    justify-content: center;
-    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
     font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-header button {
-    margin-left: 16px;
+.form-campo {
+    margin-bottom: 16px;
 }
 
-header input {
-    margin-left: 16px ;
+.form-campo label {
+    font-weight: bold;
+    display: block;
 }
 
-form {
-    background-color: #c8d6e5 ;
-    padding:  24px 0;
-    text-align: center;    
-}
-
-input, button {
+.form-campo input {
+    width: 100%;
+    display: block;
     padding: 8px;
 }
 
-button {
-    background-color: #009432 ;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
+form {
+    max-width: 360px;
 }
 
-ul li{    
-    list-style: none;
-    position: relative;
-    max-height: 170px;
-    overflow-y: hidden;
-}
-
-.item-tarefa {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-.item-tarefa:hover {
-    background-color: #f9f9f9;
-    cursor: pointer;
+form button {
+    max-width: 120px;
 }
